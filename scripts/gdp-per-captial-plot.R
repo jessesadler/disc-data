@@ -31,7 +31,7 @@ textbox <- data.frame(
   label = "Thomas Malthus writes *An Essay*<br>*on the Principle of Population*in 1798.",
   group = 1)
 
-plotting_data %>%
+plotting_data |>
   ggplot(aes(x = pop,
              y = gdp/pop,
              label = yr_lab)) +
